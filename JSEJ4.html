@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 4 </title>
+</head>
+<body>
+    <h1>Ejercicio 4 JavaScript</h1>
+    <input type="text" id="entrada"/>
+    <button id="boton1">Botón 1</button>
+<script>
+
+function escuchador(){
+       var bot1 = document.querySelector("#boton1");
+
+       
+       bot1.addEventListener("click", function nueva(){
+           var valor = document.getElementById("entrada").value;
+       var rever = valor.split("").reverse().join("");
+            alert(rever);
+       }); 
+
+       
+   }
+
+   escuchador();
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript 3 </title>
+</head>
+<body>
+    <h1>Ejercicio 3 JavaScript</h1>
+    <button id="boton1">Botón 1</button>
+    <button id="boton2">Botón 2</button>
+    <button id="boton3">Botón 3</button>
+
+<script>
+
+   function escuchador(){
+       var bot1 = document.querySelector("#boton1");
+       var bot2 = document.querySelector("#boton2");
+       var bot3 = document.querySelector("#boton3");
+
+       bot1.addEventListener("click", function nueva(){
+            alert("Se ha pulsado el boton"+1);
+       }); 
+       bot2.addEventListener("click", function nueva(){
+            alert("Se ha pulsado el boton"+2);
+       });
+       bot3.addEventListener("click", function nueva(){
+            alert("Se ha pulsado el boton"+3);
+       });  
+       
+   }
+
+   escuchador();
+   
+</script>
+</body>
+</html>
